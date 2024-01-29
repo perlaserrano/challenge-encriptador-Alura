@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/resources/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.aluracursos.com" target="_blank" class="link-logo">
+            <img src="./images/Logo.png" alt="Logo Alura" class="alura-logo">
+        </a>
+    </header>
+    <main class="main">
+        <section class="principal-content">
+            <div class="text-container">
+                 <textarea type="text" name="text" id="text" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="buttons-container">
+                <div class="warning">
+                    <img src="./images/warning-signal.svg" alt=""><p class="warning-text">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn encrypt">Encriptar</button>
+                    <button class="btn decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="card__container">
+            <textarea name="encrypted-text" id="encrypted-textarea" cols="10" rows="30" class="encrypted-textarea hidden" onkeyup="showTextarea(this.value)"></textarea>
+            <div class="card__content">
+                <img src="./images/Muñeco.png" alt="" class="card__figura">
+                <h2 class="card__h2">Ningún mensaje fue encontrado</h2>
+                <p class="card__p">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="copy">Copiar</button>
+        </section>
+    </main>
+    <footer class="flex">
+        <section class="text-icon">
+            <a href="https://www.linkedin.com/in/perla-serrano-257b9217b/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin-in" style="--color-icon: hsla(213, 84%, 24%, 1); --font: 1.5rem"></i>
+                <i class="" style="color: #74C0FC;"></i>
+            </a>
+            <a href="https://github.com/perlaserrano" target="_blank" rel="noopener">
+                <i class="bx bxl-github" style="--color-icon:  #495057; --font: 1.5rem"></i>
+            </a>
+        </section>
+        <section class="flex warning-text">
+         Perla Serrano - Alura Latam 2024 
+        </section>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
